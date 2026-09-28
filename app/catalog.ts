@@ -15,7 +15,15 @@ export const dailyCards = {
     ["帮助", "bāngzhù", "помогать", "谢谢你的帮助。", "🤝"],
     ["发现", "fāxiàn", "обнаруживать", "我发现了一家新书店。", "🔎"],
     ["希望", "xīwàng", "надеяться", "我希望今年去中国。", "🏮"],
-    ["练习", "liànxí", "упражняться", "每天练习十分钟。", "🎯"]
+    ["练习", "liànxí", "упражняться", "每天练习十分钟。", "🎯"],
+    ["明白", "míngbai", "понимать", "我明白你的意思。", "💡"],
+    ["已经", "yǐjīng", "уже", "我已经吃饭了。", "✅"],
+    ["可能", "kěnéng", "возможно", "他今天可能不来。", "🎲"],
+    ["介绍", "jièshào", "представлять; знакомить", "我来介绍一下我的朋友。", "👋"],
+    ["注意", "zhùyì", "обращать внимание", "请注意听老师说。", "👂"],
+    ["同意", "tóngyì", "соглашаться", "我同意你的想法。", "🤝"],
+    ["办法", "bànfǎ", "способ; решение", "我们一起想办法。", "🧩"],
+    ["变化", "biànhuà", "изменение", "天气变化很快。", "🌦️"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -31,11 +39,19 @@ export const dailyCards = {
     ["suggest", "/səˈdʒest/", "предлагать", "I suggest watching it with subtitles.", "💬"],
     ["confident", "/ˈkɒnfɪdənt/", "уверенный", "I feel more confident speaking English.", "🎤"],
     ["notice", "/ˈnəʊtɪs/", "замечать", "Did you notice the difference?", "👀"],
-    ["avoid", "/əˈvɔɪd/", "избегать", "Try to avoid translating every word.", "🧠"]
+    ["avoid", "/əˈvɔɪd/", "избегать", "Try to avoid translating every word.", "🧠"],
+    ["approach", "/əˈprəʊtʃ/", "подход; приближаться", "We need a different approach to this task.", "🧭"],
+    ["evidence", "/ˈevɪdəns/", "доказательство", "There is enough evidence to support the idea.", "🔎"],
+    ["achieve", "/əˈtʃiːv/", "достигать", "She achieved her goal through daily practice.", "🏆"],
+    ["require", "/rɪˈkwaɪə/", "требовать", "This job requires good communication skills.", "📋"],
+    ["otherwise", "/ˈʌðəwaɪz/", "иначе", "Leave now, otherwise you will miss the train.", "↪️"],
+    ["concerned", "/kənˈsɜːnd/", "обеспокоенный; заинтересованный", "I am concerned about the deadline.", "💭"],
+    ["persuade", "/pəˈsweɪd/", "убеждать", "He persuaded me to try the course.", "💬"],
+    ["increase", "/ɪnˈkriːs/", "увеличивать", "Reading can increase your vocabulary.", "📈"]
   ]
 } as const;
 
-export const extraWords = {
+const baseExtraWords = {
   zh: [
     ["椅子","yǐzi","стул","🪑"],["桌子","zhuōzi","стол","🪵"],["房间","fángjiān","комната","🏠"],["学校","xuéxiào","школа","🏫"],["公司","gōngsī","компания","🏢"],["医院","yīyuàn","больница","🏥"],["机场","jīchǎng","аэропорт","✈️"],["火车站","huǒchēzhàn","вокзал","🚉"],["早上","zǎoshang","утро","🌅"],["晚上","wǎnshang","вечер","🌙"],["开始","kāishǐ","начинать","▶️"],["结束","jiéshù","заканчивать","🏁"],["觉得","juéde","считать, чувствовать","💭"],["知道","zhīdào","знать","🧠"],["告诉","gàosu","рассказывать","🗣️"],["问题","wèntí","вопрос, проблема","❓"],["事情","shìqing","дело, событие","📌"],["天气","tiānqì","погода","⛅"],["运动","yùndòng","спорт","🏃"],["旅行","lǚxíng","путешествие","🧳"],["颜色","yánsè","цвет","🎨"],["便宜","piányi","дешёвый","🏷️"],["贵","guì","дорогой","💎"],["快","kuài","быстрый","⚡"],["慢","màn","медленный","🐢"],["远","yuǎn","далеко","🗺️"],["近","jìn","близко","📍"],["因为","yīnwèi","потому что","🔗"],["所以","suǒyǐ","поэтому","➡️"],["但是","dànshì","но","↔️"]
   ],
@@ -63,7 +79,7 @@ export const lessonExtensions = {
   ]
 } as const;
 
-export const resourceCatalog = {
+const baseResourceCatalog = {
   zh: [
     ["Dong Chinese","Слова в контексте, происхождение иероглифов, письмо и понятные видео.","https://www.dong-chinese.com/","Тренажёр"],
     ["TrainChinese","Большой китайско-русский словарь: примеры, аудио и карточки.","https://www.trainchinese.com/v2/search.php?searchWord=стул&rAp=0&height=0&width=0&tcLanguage=ru","Словарь"],
@@ -90,7 +106,57 @@ export const resourceCatalog = {
   ]
 } as const;
 
-export const rotatingTasks = {
+const baseRotatingTasks = {
   zh: ["Назови 5 предметов вокруг себя по-китайски.","Опиши сегодняшний день пятью короткими фразами.","Прослушай 3 слова и повтори каждое два раза.","Составь мини-диалог в кафе на 6 реплик.","Найди в словаре 5 слов с иероглифом 学.","Напиши сообщение другу, используя 因为…所以…","Посмотри 3 минуты видео и выпиши 5 знакомых слов."],
   en: ["Describe your morning in six sentences.","Record a one-minute voice note about your plans.","Use although, however and therefore in three sentences.","Watch three minutes of a video and collect five phrases.","Write a polite complaint about a delayed order.","Retell a film scene using past tenses.","Find five phrasal verbs and make personal examples."]
+} as const;
+
+export const weeklyWords = {
+  zh: [
+    ["考试","kǎoshì","экзамен","📝"],["成绩","chéngjì","оценка, результат","💯"],["作业","zuòyè","домашнее задание","📚"],["回答","huídá","отвечать","🗣️"],["欢迎","huānyíng","приветствовать","🎉"],["当然","dāngrán","конечно","👌"],["突然","tūrán","внезапно","⚡"],["容易","róngyì","лёгкий, нетрудный","🪶"],["清楚","qīngchu","ясный, отчётливый","🔍"],["比较","bǐjiào","сравнивать; довольно","⚖️"],["需要","xūyào","нуждаться","🧰"],["选择","xuǎnzé","выбирать","☑️"],["生活","shēnghuó","жизнь; жить","🌱"],["声音","shēngyīn","звук, голос","🔊"],["句子","jùzi","предложение","✍️"]
+  ],
+  en: [
+    ["accurate","/ˈækjərət/","точный","🎯"],["advantage","/ədˈvɑːntɪdʒ/","преимущество","➕"],["disadvantage","/ˌdɪsədˈvɑːntɪdʒ/","недостаток","➖"],["influence","/ˈɪnfluəns/","влиять; влияние","🌊"],["maintain","/meɪnˈteɪn/","поддерживать","🧰"],["mention","/ˈmenʃən/","упоминать","💬"],["ordinary","/ˈɔːdənəri/","обычный","📦"],["particular","/pəˈtɪkjələ/","конкретный, особый","📌"],["prevent","/prɪˈvent/","предотвращать","🛡️"],["provide","/prəˈvaɪd/","предоставлять","🤲"],["recognise","/ˈrekəɡnaɪz/","узнавать","👀"],["reduce","/rɪˈdjuːs/","сокращать","📉"],["remain","/rɪˈmeɪn/","оставаться","⏳"],["responsible","/rɪˈspɒnsəbəl/","ответственный","🧑‍💼"],["suitable","/ˈsuːtəbəl/","подходящий","✅"]
+  ]
+} as const;
+
+export const weeklyResources = {
+  zh: [
+    ["Официальный HSK","Описание экзамена, уровней и актуальная информация от Chinese Test International.","https://www.chinesetest.cn/hsk","Экзамен"],
+    ["Mandarin Bean HSK Tests","Бесплатные пробные тесты HSK с аудированием, чтением и проверкой ответов.","https://mandarinbean.com/hsk-chinese-test-online/","Пробный тест"],
+    ["HSK 2 Audio Workbook","Открытые аудиодорожки к рабочей тетради HSK Standard Course 2.","https://www.nhantriviet.com/MP3-HSK2-BT","Аудио"],
+    ["MDBG Chinese Dictionary","Словарь с примерами, разбором иероглифов, пиньинем и озвучкой.","https://www.mdbg.net/chinese/dictionary","Словарь"],
+    ["HSK Course Mock Tests","Полноформатные тренировочные варианты HSK 2 с результатом.","https://www.hskcourse.com/hsk-sample-test/","Практика"],
+    ["HSK Learning Resources","Подборка материалов от Института Конфуция Манчестерского университета.","https://www.confuciusinstitute.manchester.ac.uk/study/testing/hsk/hsk-learning-resources/","Подборка"]
+  ],
+  en: [
+    ["British Council B1 Listening","Аудио о звонках, встречах и интервью: подготовка, запись и два задания.","https://learnenglish.britishcouncil.org/free-resources/listening/b1","Аудирование"],
+    ["British Council B1 Speaking","Короткие видео и тренировка фраз для мнения, просьб и общения.","https://learnenglish.britishcouncil.org/free-resources/speaking/b1","Говорение"],
+    ["Word on the Street","Сюжетная видеосерия B1–B2 о Великобритании с транскриптами и упражнениями.","https://learnenglish.britishcouncil.org/free-resources/general/video-series/word-street","Видео"],
+    ["Big City Small World","Аудиосериал B1 о друзьях в Лондоне: транскрипты и интерактивные задания.","https://learnenglish.britishcouncil.org/free-resources/general/audio-series/bcsw","Аудиосериал"],
+    ["Cambridge B1–B2 Listening","Диалоги, интонация, произношение и понимание деталей.","https://www.cambridgeenglish.org/learning-english/activities-for-learners?level=independent&skill=listening","Практика"],
+    ["You're Hired","Видеосериал B1–B2 об интервью и работе с транскриптами и упражнениями.","https://learnenglish.britishcouncil.org/free-resources/business/youre-hired","Business English"]
+  ]
+} as const;
+
+export const weeklyTasks = {
+  zh: ["Сравни два предмета с 比 и составь 4 фразы.","Послушай аудио HSK 2 и запиши 5 чисел или времён.","Опиши картинку по схеме: кто + где + что делает.","Составь 6 вопросов с 谁、哪儿、怎么 и 为什么.","Перескажи короткую сцену, используя 先…然后…","Выбери 8 новых слов и раздели их на существительные и глаголы."],
+  en: ["Listen to a B1 dialogue and write down five stressed words.","Compare two ways of learning using three linking phrases.","Describe a picture for one minute without stopping.","Write four questions you would ask in a job interview.","Retell an episode using first, meanwhile and eventually.","Choose eight new words and make a two-column mind map."]
+} as const;
+
+export const catalogUpdated = "28 сентября 2026";
+
+export const extraWords = {
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en]
+} as const;
+
+export const resourceCatalog = {
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en]
+} as const;
+
+export const rotatingTasks = {
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en]
 } as const;
