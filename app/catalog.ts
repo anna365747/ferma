@@ -23,7 +23,14 @@ export const dailyCards = {
     ["注意", "zhùyì", "обращать внимание", "请注意听老师说。", "👂"],
     ["同意", "tóngyì", "соглашаться", "我同意你的想法。", "🤝"],
     ["办法", "bànfǎ", "способ; решение", "我们一起想办法。", "🧩"],
-    ["变化", "biànhuà", "изменение", "天气变化很快。", "🌦️"]
+    ["变化", "biànhuà", "изменение", "天气变化很快。", "🌦️"],
+    ["故事", "gùshi", "история", "这个故事很有意思。", "📖"],
+    ["认真", "rènzhēn", "внимательный; серьёзный", "她学习得很认真。", "🎯"],
+    ["进步", "jìnbù", "прогрессировать", "你的中文进步很快。", "📈"],
+    ["记得", "jìde", "помнить", "记得明天带书。", "🧠"],
+    ["复习", "fùxí", "повторять изученное", "晚上我复习今天的生词。", "🔄"],
+    ["节目", "jiémù", "программа, передача", "我喜欢看这个节目。", "📺"],
+    ["文化", "wénhuà", "культура", "我对中国文化很感兴趣。", "🏮"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -47,7 +54,14 @@ export const dailyCards = {
     ["otherwise", "/ˈʌðəwaɪz/", "иначе", "Leave now, otherwise you will miss the train.", "↪️"],
     ["concerned", "/kənˈsɜːnd/", "обеспокоенный; заинтересованный", "I am concerned about the deadline.", "💭"],
     ["persuade", "/pəˈsweɪd/", "убеждать", "He persuaded me to try the course.", "💬"],
-    ["increase", "/ɪnˈkriːs/", "увеличивать", "Reading can increase your vocabulary.", "📈"]
+    ["increase", "/ɪnˈkriːs/", "увеличивать", "Reading can increase your vocabulary.", "📈"],
+    ["assume", "/əˈsjuːm/", "предполагать", "I assumed the meeting started at ten.", "💭"],
+    ["attitude", "/ˈætɪtjuːd/", "отношение, позиция", "A positive attitude makes practice easier.", "🧭"],
+    ["essential", "/ɪˈsenʃəl/", "необходимый", "Regular listening is essential for progress.", "⭐"],
+    ["feature", "/ˈfiːtʃə/", "особенность", "Audio playback is my favourite feature.", "🔍"],
+    ["issue", "/ˈɪʃuː/", "вопрос, проблема", "We discussed the issue after class.", "❓"],
+    ["reasonable", "/ˈriːzənəbəl/", "разумный", "That sounds like a reasonable plan.", "⚖️"],
+    ["variety", "/vəˈraɪəti/", "разнообразие", "The course offers a variety of exercises.", "🎨"]
   ]
 } as const;
 
@@ -144,19 +158,50 @@ export const weeklyTasks = {
   en: ["Listen to a B1 dialogue and write down five stressed words.","Compare two ways of learning using three linking phrases.","Describe a picture for one minute without stopping.","Write four questions you would ask in a job interview.","Retell an episode using first, meanwhile and eventually.","Choose eight new words and make a two-column mind map."]
 } as const;
 
-export const catalogUpdated = "28 сентября 2026";
+export const octoberWords = {
+  zh: [
+    ["故事","gùshi","история, рассказ","📖"],["节目","jiémù","программа, передача","📺"],["习惯","xíguàn","привычка","🔁"],["认真","rènzhēn","серьёзный, внимательный","🎯"],["水平","shuǐpíng","уровень","📊"],["进步","jìnbù","прогрессировать","📈"],["记得","jìde","помнить","🧠"],["忘记","wàngjì","забывать","💭"],["复习","fùxí","повторять изученное","🔄"],["文化","wénhuà","культура","🏮"]
+  ],
+  en: [
+    ["assume","/əˈsjuːm/","предполагать","💭"],["attitude","/ˈætɪtjuːd/","отношение, позиция","🧭"],["consequence","/ˈkɒnsɪkwəns/","последствие","🔗"],["convince","/kənˈvɪns/","убеждать","💬"],["essential","/ɪˈsenʃəl/","необходимый","⭐"],["feature","/ˈfiːtʃə/","особенность","🔍"],["issue","/ˈɪʃuː/","вопрос, проблема","❓"],["occur","/əˈkɜː/","происходить","⚡"],["reasonable","/ˈriːzənəbəl/","разумный","⚖️"],["variety","/vəˈraɪəti/","разнообразие","🎨"]
+  ]
+} as const;
+
+export const octoberResources = {
+  zh: [
+    ["HSK Guide: истории HSK 2","Короткие диалоги о транспорте, учёбе и кафе с пиньинем, переводом и озвучкой по предложениям.","https://www.hsk.guide/zh/stories?level=hsk-level-2","Чтение + аудио"],
+    ["ShanHai History","Бесплатные истории HSK 2 с естественным аудио, тремя скоростями и вопросами по содержанию.","https://shanhaistory.app/","Истории"],
+    ["Chinese Graded Reader","Бесплатные короткие рассказы, составленные из слов выбранного уровня HSK.","https://chinesegradedreader.com/","Чтение"],
+    ["Fluentide HSK 2","Короткие аудиовыпуски с транскриптом, пиньинем, переводом и словарём.","https://fluentide.com/chinese/hsk/2","Подкаст"],
+    ["iQIYI Official","Официальные фрагменты китайских сериалов и трейлеры с субтитрами.","https://www.youtube.com/@iQIYIofficial","Сериалы"]
+  ],
+  en: [
+    ["British Council B1 Reading","Статьи, письма, обзоры и рабочие тексты с подготовкой и двумя заданиями.","https://learnenglish.britishcouncil.org/free-resources/reading/b1","Чтение"],
+    ["British Council B1 Writing","Образцы писем, отзывов и коротких эссе с подсказками и упражнениями.","https://learnenglish.britishcouncil.org/free-resources/writing/b1","Письмо"],
+    ["LibriVox","Бесплатные и легальные аудиокниги из общественного достояния.","https://librivox.org/","Аудиокниги"],
+    ["Standard Ebooks","Аккуратно оформленные бесплатные электронные книги из общественного достояния.","https://standardebooks.org/","Книги"],
+    ["Warner Bros. Pictures","Официальные трейлеры и фрагменты известных фильмов для практики живой речи.","https://www.youtube.com/@WarnerBrosPictures","Кино"]
+  ]
+} as const;
+
+export const octoberTasks = {
+  zh: ["Прочитай одну историю HSK 2 и расположи 5 событий по порядку.","Послушай диалог без текста и выбери картинку, которая лучше всего описывает ситуацию.","Сделай карточки для 6 слов из истории: иероглиф — пиньинь — картинка.","Запиши 45-секундный пересказ, используя 先、然后、最后.","Найди в тексте 5 глаголов и составь с каждым свою фразу.","Посмотри официальный фрагмент сериала и повтори 3 короткие реплики с интонацией."],
+  en: ["Read a B1 article and match five headings to its paragraphs.","Listen to one audiobook minute and put six events in the correct order.","Create six picture cards for the most useful words in the text.","Write a 100-word review using although, however and overall.","Watch an official film clip and shadow three short lines.","Compare the ebook and audio version of one paragraph and mark stressed words."]
+} as const;
+
+export const catalogUpdated = "5 октября 2026";
 
 export const extraWords = {
-  zh: [...baseExtraWords.zh, ...weeklyWords.zh],
-  en: [...baseExtraWords.en, ...weeklyWords.en]
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en]
 } as const;
 
 export const resourceCatalog = {
-  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh],
-  en: [...baseResourceCatalog.en, ...weeklyResources.en]
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en]
 } as const;
 
 export const rotatingTasks = {
-  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh],
-  en: [...baseRotatingTasks.en, ...weeklyTasks.en]
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en]
 } as const;
