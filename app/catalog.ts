@@ -30,7 +30,14 @@ export const dailyCards = {
     ["记得", "jìde", "помнить", "记得明天带书。", "🧠"],
     ["复习", "fùxí", "повторять изученное", "晚上我复习今天的生词。", "🔄"],
     ["节目", "jiémù", "программа, передача", "我喜欢看这个节目。", "📺"],
-    ["文化", "wénhuà", "культура", "我对中国文化很感兴趣。", "🏮"]
+    ["文化", "wénhuà", "культура", "我对中国文化很感兴趣。", "🏮"],
+    ["安排", "ānpái", "планировать; план", "我已经安排好了周末。", "🗓️"],
+    ["参加", "cānjiā", "участвовать", "明天我参加中文课。", "🙋"],
+    ["检查", "jiǎnchá", "проверять", "请检查一下你的答案。", "🔎"],
+    ["完成", "wánchéng", "завершать", "我完成今天的作业了。", "✅"],
+    ["提高", "tígāo", "повышать, улучшать", "听故事可以提高听力。", "📈"],
+    ["方法", "fāngfǎ", "метод, способ", "这个学习方法很有用。", "🧭"],
+    ["内容", "nèiróng", "содержание", "这个视频的内容很简单。", "📺"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -61,7 +68,14 @@ export const dailyCards = {
     ["feature", "/ˈfiːtʃə/", "особенность", "Audio playback is my favourite feature.", "🔍"],
     ["issue", "/ˈɪʃuː/", "вопрос, проблема", "We discussed the issue after class.", "❓"],
     ["reasonable", "/ˈriːzənəbəl/", "разумный", "That sounds like a reasonable plan.", "⚖️"],
-    ["variety", "/vəˈraɪəti/", "разнообразие", "The course offers a variety of exercises.", "🎨"]
+    ["variety", "/vəˈraɪəti/", "разнообразие", "The course offers a variety of exercises.", "🎨"],
+    ["context", "/ˈkɒntekst/", "контекст", "Try to guess the meaning from the context.", "🧩"],
+    ["effective", "/ɪˈfektɪv/", "эффективный", "Short daily sessions are more effective.", "🎯"],
+    ["focus", "/ˈfəʊkəs/", "сосредоточиться; фокус", "Focus on the main idea first.", "👀"],
+    ["identify", "/aɪˈdentɪfaɪ/", "определять, распознавать", "Identify the speaker's main point.", "🔍"],
+    ["interpret", "/ɪnˈtɜːprɪt/", "толковать, понимать", "How would you interpret this scene?", "🎬"],
+    ["sequence", "/ˈsiːkwəns/", "последовательность", "Put the events in the correct sequence.", "🔢"],
+    ["summary", "/ˈsʌməri/", "краткое изложение", "Write a short summary of the episode.", "📝"]
   ]
 } as const;
 
@@ -189,19 +203,50 @@ export const octoberTasks = {
   en: ["Read a B1 article and match five headings to its paragraphs.","Listen to one audiobook minute and put six events in the correct order.","Create six picture cards for the most useful words in the text.","Write a 100-word review using although, however and overall.","Watch an official film clip and shadow three short lines.","Compare the ebook and audio version of one paragraph and mark stressed words."]
 } as const;
 
-export const catalogUpdated = "5 октября 2026";
+export const october12Words = {
+  zh: [
+    ["安排","ānpái","планировать; план","🗓️"],["参加","cānjiā","участвовать","🙋"],["检查","jiǎnchá","проверять","🔎"],["完成","wánchéng","завершать","✅"],["提高","tígāo","повышать, улучшать","📈"],["方法","fāngfǎ","метод, способ","🧭"],["内容","nèiróng","содержание","📺"],["理解","lǐjiě","понимать","💡"],["顺序","shùnxù","порядок, последовательность","🔢"],["总结","zǒngjié","подводить итог","📝"]
+  ],
+  en: [
+    ["context","/ˈkɒntekst/","контекст","🧩"],["effective","/ɪˈfektɪv/","эффективный","🎯"],["focus","/ˈfəʊkəs/","сосредоточиться; фокус","👀"],["identify","/aɪˈdentɪfaɪ/","определять, распознавать","🔍"],["interpret","/ɪnˈtɜːprɪt/","толковать, понимать","🎬"],["sequence","/ˈsiːkwəns/","последовательность","🔢"],["summary","/ˈsʌməri/","краткое изложение","📝"],["detail","/ˈdiːteɪl/","деталь","🔎"],["predict","/prɪˈdɪkt/","предсказывать","🔮"],["respond","/rɪˈspɒnd/","отвечать, реагировать","💬"]
+  ]
+} as const;
+
+export const october12Resources = {
+  zh: [
+    ["Little Fox Chinese","Анимированные истории, песни и игры с иероглифами, пиньинем, переводом, MP3 и квизами.","https://res-chinese.littlefox.com/en/service/introduce","Видео + картинки"],
+    ["Chinese Zero to Hero: HSK 2","Бесплатные вводные курсы и открытые HSK-видеоуроки с разбором грамматики.","https://www.chinesezerotohero.com/courses/","Видеокурс"],
+    ["HSKStory Audio Stories","Короткие истории HSK 2 по главам с аудио, пиньинем и чтением.","https://hskstory.com/guides/chinese-audio-stories","Аудиоистории"],
+    ["Mandarin Click HSK 2–3","Медленные визуальные истории: ханцзы, пиньинь, картинки и субтитры.","https://www.youtube.com/watch?v=5QsC5JUnt0o","Видеоистория"],
+    ["Slow Chinese — бесплатный курс","Неспешные видео о китайской культуре с китайскими, пиньинь- и английскими субтитрами.","https://chinesezerotohero.teachable.com/p/slow-chinese","Культура"]
+  ],
+  en: [
+    ["VOA Let's Learn English 2","Полный видеокурс для продолжающих от преподавателей американского английского.","https://learningenglish.voanews.com/p/6765.html","Видеокурс"],
+    ["Listen in English: B1+ clips","Фрагменты Friends, Wednesday, Moana и других сериалов с заданиями по уровню.","https://www.listeninenglish.com/","Кино + задания"],
+    ["British Council B1 Stories","Адаптированные рассказы и статьи уровня B1 для чтения без перегруза.","https://learnenglishteens.britishcouncil.org/study-break/reading-zone/b1-graded-reading","Истории"],
+    ["Podcasts in English — Level 2","Короткие подкасты для среднего уровня; часть заданий и листов доступна бесплатно.","https://www.podcastsinenglish.com/","Подкасты"],
+    ["Oxford B1–B2 Listening","Бесплатные аудиоуроки с естественными диалогами, текстом и упражнениями.","https://www.oxfordonlineenglish.com/free-english-listening-lessons","Аудирование"]
+  ]
+} as const;
+
+export const october12Tasks = {
+  zh: ["Посмотри анимацию Little Fox без перевода и соедини 6 реплик с героями.","Прослушай историю HSK 2 и расставь 5 картинок по порядку событий.","Выбери 8 слов из видео и нарисуй к каждому простой визуальный символ.","Посмотри одну сцену дважды и запиши три фразы, которые удалось услышать без субтитров.","Сделай устный итог истории в четырёх предложениях с 先、然后、最后.","Сравни две версии одной истории: HSK 1 и HSK 2 — найди пять новых слов."],
+  en: ["Watch a B1 film clip and match six lines to the characters who say them.","Listen once without subtitles and arrange five screenshots in story order.","Predict the ending of a short scene, then watch and compare your version.","Shadow four lines from a VOA episode, copying rhythm and stress.","Read a B1 story and create a six-picture storyboard.","Write a 90-word summary using first, meanwhile, as a result and finally."]
+} as const;
+
+export const catalogUpdated = "12 октября 2026";
 
 export const extraWords = {
-  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh],
-  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en]
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en]
 } as const;
 
 export const resourceCatalog = {
-  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh],
-  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en]
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en]
 } as const;
 
 export const rotatingTasks = {
-  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh],
-  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en]
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en]
 } as const;
