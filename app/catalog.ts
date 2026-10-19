@@ -38,6 +38,13 @@ export const dailyCards = {
     ["提高", "tígāo", "повышать, улучшать", "听故事可以提高听力。", "📈"],
     ["方法", "fāngfǎ", "метод, способ", "这个学习方法很有用。", "🧭"],
     ["内容", "nèiróng", "содержание", "这个视频的内容很简单。", "📺"]
+    ,["计划", "jìhuà", "планировать; план", "我计划周末复习中文。", "🗓️"]
+    ,["同时", "tóngshí", "одновременно; в то же время", "她听录音，同时看课文。", "🎧"]
+    ,["根据", "gēnjù", "согласно; на основании", "请根据图片回答问题。", "🖼️"]
+    ,["结果", "jiéguǒ", "результат", "考试结果明天出来。", "📊"]
+    ,["原因", "yuányīn", "причина", "你知道他迟到的原因吗？", "🔎"]
+    ,["例如", "lìrú", "например", "我喜欢运动，例如游泳和跑步。", "💡"]
+    ,["以前", "yǐqián", "раньше; до", "我以前住在北京。", "⏪"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -76,6 +83,13 @@ export const dailyCards = {
     ["interpret", "/ɪnˈtɜːprɪt/", "толковать, понимать", "How would you interpret this scene?", "🎬"],
     ["sequence", "/ˈsiːkwəns/", "последовательность", "Put the events in the correct sequence.", "🔢"],
     ["summary", "/ˈsʌməri/", "краткое изложение", "Write a short summary of the episode.", "📝"]
+    ,["clarify", "/ˈklærɪfaɪ/", "прояснять", "Could you clarify the final point?", "💡"]
+    ,["evaluate", "/ɪˈvæljueɪt/", "оценивать", "Evaluate both options before you decide.", "⚖️"]
+    ,["contrast", "/ˈkɒntrɑːst/", "сопоставлять; контраст", "Contrast the two characters in the scene.", "↔️"]
+    ,["outcome", "/ˈaʊtkʌm/", "результат, исход", "The outcome was better than expected.", "🎯"]
+    ,["relevant", "/ˈreləvənt/", "относящийся к делу", "Choose the most relevant detail.", "📌"]
+    ,["strategy", "/ˈstrætədʒi/", "стратегия", "This listening strategy saves time.", "🧭"]
+    ,["viewpoint", "/ˈvjuːpɔɪnt/", "точка зрения", "Explain the speaker's viewpoint.", "👁️"]
   ]
 } as const;
 
@@ -234,19 +248,50 @@ export const october12Tasks = {
   en: ["Watch a B1 film clip and match six lines to the characters who say them.","Listen once without subtitles and arrange five screenshots in story order.","Predict the ending of a short scene, then watch and compare your version.","Shadow four lines from a VOA episode, copying rhythm and stress.","Read a B1 story and create a six-picture storyboard.","Write a 90-word summary using first, meanwhile, as a result and finally."]
 } as const;
 
-export const catalogUpdated = "12 октября 2026";
+export const october19Words = {
+  zh: [
+    ["计划","jìhuà","планировать; план","🗓️"],["同时","tóngshí","одновременно; в то же время","🎧"],["根据","gēnjù","согласно; на основании","🖼️"],["结果","jiéguǒ","результат","📊"],["原因","yuányīn","причина","🔎"],["例如","lìrú","например","💡"],["以前","yǐqián","раньше; до","⏪"],["后来","hòulái","позже, затем","⏩"],["方向","fāngxiàng","направление","🧭"],["讨论","tǎolùn","обсуждать","💬"]
+  ],
+  en: [
+    ["clarify","/ˈklærɪfaɪ/","прояснять","💡"],["evaluate","/ɪˈvæljueɪt/","оценивать","⚖️"],["contrast","/ˈkɒntrɑːst/","сопоставлять; контраст","↔️"],["outcome","/ˈaʊtkʌm/","результат, исход","🎯"],["relevant","/ˈreləvənt/","относящийся к делу","📌"],["strategy","/ˈstrætədʒi/","стратегия","🧭"],["viewpoint","/ˈvjuːpɔɪnt/","точка зрения","👁️"],["imply","/ɪmˈplaɪ/","подразумевать","💭"],["conclude","/kənˈkluːd/","делать вывод","✅"],["alternative","/ɔːlˈtɜːnətɪv/","альтернатива","🔀"]
+  ]
+} as const;
+
+export const october19Resources = {
+  zh: [
+    ["Pinyora: истории HSK 2","Бесплатные градуированные истории с пиньинем, аудио по предложениям и сохранением слов.","https://pinyora.com/stories/","Чтение + аудио"],
+    ["LearnChinese.ai HSK 2","Бесплатный курс: картинки, медленное аудио и упражнения китайский ↔ пиньинь ↔ перевод.","https://learnchinese.ai/?tour_course=2.0","Интерактивный курс"],
+    ["Chinese Tools: аудиокурс","Последовательные уроки A2/HSK 2 со словами, грамматикой, диалогами и упражнениями.","https://chine.in/method/","Учебник + аудио"],
+    ["Global Chinese Learning Platform","Образовательная платформа с бесплатными ресурсами, культурой и тренировочными HSK-заданиями.","https://global.chinese-learning.cn/","Практика"],
+    ["HSK Learning: слова с аудио","Словарь HSK по темам с озвучкой, примерами и карточками для повторения.","https://www.hsk-learning.com/","Словарь + карточки"]
+  ],
+  en: [
+    ["Cambridge B1–B2 Activities","Короткие задания на диалоги, произношение, лексику и понимание речи с фильтром уровня.","https://www.cambridgeenglish.org/learning-english/activities-for-learners?level=independent&skill=listening%2Creading","Интерактив"],
+    ["Cambridge: Virtually Anywhere","Аудиосериал B1–B2 по эпизодам с заданиями на полезные выражения и понимание.","https://www.cambridgeenglish.org/learning-english/activities-for-learners/?level=independent&skill=listening%2Cwriting&time=10%2B-mins","Аудиосериал"],
+    ["Lit2Go","Легальные классические рассказы и стихи: MP3, текст, PDF и данные о сложности.","https://etc.usf.edu/lit2go/","Книги + аудио"],
+    ["British Council: аудиосериалы","Сюжетные сериалы уровня B1 с подготовительными и итоговыми упражнениями.","https://learnenglish.britishcouncil.org/free-resources/general/audio-series","Аудиосериал"],
+    ["VOA Learning English TV","Короткие официальные видео о грамматике, произношении, новостных словах и разговорных выражениях.","https://learningenglish.voanews.com/programs/tv","Видео"]
+  ]
+} as const;
+
+export const october19Tasks = {
+  zh: ["Соедини 8 картинок с новыми словами, затем произнеси каждое слово вслух.","Прослушай пять предложений HSK 2 и расставь соответствующие изображения по порядку.","Прочитай короткую историю Pinyora и выбери правильную картинку для каждой сцены.","Составь визуальную ленту из четырёх событий и перескажи её с 以前、后来、最后.","Прослушай диалог дважды: сначала выбери место действия, затем отметь причину и результат.","Нарисуй карту маршрута и объясни направление четырьмя фразами с 左边、右边、前面、后面."],
+  en: ["Match six lines from an audio drama to the characters and explain your clues.","Listen to a B1 dialogue and arrange five picture cards in the correct sequence.","Compare two film characters in a visual Venn diagram using whereas and both.","Read a Lit2Go passage while listening, then highlight five words carrying sentence stress.","Choose the image that best represents the speaker's viewpoint and give two reasons.","Create a six-frame storyboard and record a one-minute retelling with eventually and as a result."]
+} as const;
+
+export const catalogUpdated = "19 октября 2026";
 
 export const extraWords = {
-  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh],
-  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en]
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh, ...october19Words.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en, ...october19Words.en]
 } as const;
 
 export const resourceCatalog = {
-  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh],
-  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en]
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh, ...october19Resources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en, ...october19Resources.en]
 } as const;
 
 export const rotatingTasks = {
-  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh],
-  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en]
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh, ...october19Tasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en, ...october19Tasks.en]
 } as const;
