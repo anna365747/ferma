@@ -45,6 +45,13 @@ export const dailyCards = {
     ,["原因", "yuányīn", "причина", "你知道他迟到的原因吗？", "🔎"]
     ,["例如", "lìrú", "например", "我喜欢运动，例如游泳和跑步。", "💡"]
     ,["以前", "yǐqián", "раньше; до", "我以前住在北京。", "⏪"]
+    ,["坚持", "jiānchí", "продолжать; настойчиво делать", "每天坚持练习，中文会越来越好。", "💪"]
+    ,["适合", "shìhé", "подходить", "这个故事很适合HSK二级学生。", "✅"]
+    ,["影响", "yǐngxiǎng", "влиять; влияние", "睡得太晚会影响学习。", "🌊"]
+    ,["目标", "mùbiāo", "цель", "我的目标是听懂中文视频。", "🎯"]
+    ,["经验", "jīngyàn", "опыт", "她有很多学习语言的经验。", "🧭"]
+    ,["解决", "jiějué", "решать проблему", "我们一起解决这个问题吧。", "🛠️"]
+    ,["关系", "guānxi", "отношение; связь", "这两个词有什么关系？", "🔗"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -90,6 +97,13 @@ export const dailyCards = {
     ,["relevant", "/ˈreləvənt/", "относящийся к делу", "Choose the most relevant detail.", "📌"]
     ,["strategy", "/ˈstrætədʒi/", "стратегия", "This listening strategy saves time.", "🧭"]
     ,["viewpoint", "/ˈvjuːpɔɪnt/", "точка зрения", "Explain the speaker's viewpoint.", "👁️"]
+    ,["analyse", "/ˈænəlaɪz/", "анализировать", "Analyse how the character changes.", "🔬"]
+    ,["infer", "/ɪnˈfɜː/", "делать вывод", "What can you infer from her tone?", "💭"]
+    ,["distinguish", "/dɪˈstɪŋɡwɪʃ/", "различать", "Distinguish facts from opinions.", "↔️"]
+    ,["perspective", "/pəˈspektɪv/", "точка зрения", "Retell the scene from another perspective.", "👁️"]
+    ,["coherent", "/kəʊˈhɪərənt/", "связный, последовательный", "Write a coherent paragraph about the film.", "🧩"]
+    ,["justify", "/ˈdʒʌstɪfaɪ/", "обосновывать", "Justify your choice with two details.", "⚖️"]
+    ,["highlight", "/ˈhaɪlaɪt/", "выделять, подчёркивать", "Highlight the key phrases in the transcript.", "🖍️"]
   ]
 } as const;
 
@@ -279,19 +293,50 @@ export const october19Tasks = {
   en: ["Match six lines from an audio drama to the characters and explain your clues.","Listen to a B1 dialogue and arrange five picture cards in the correct sequence.","Compare two film characters in a visual Venn diagram using whereas and both.","Read a Lit2Go passage while listening, then highlight five words carrying sentence stress.","Choose the image that best represents the speaker's viewpoint and give two reasons.","Create a six-frame storyboard and record a one-minute retelling with eventually and as a result."]
 } as const;
 
-export const catalogUpdated = "19 октября 2026";
+export const october26Words = {
+  zh: [
+    ["坚持","jiānchí","продолжать; настойчиво делать","💪"],["适合","shìhé","подходить","✅"],["影响","yǐngxiǎng","влиять; влияние","🌊"],["目标","mùbiāo","цель","🎯"],["经验","jīngyàn","опыт","🧭"],["解决","jiějué","решать проблему","🛠️"],["关系","guānxi","отношение; связь","🔗"],["过程","guòchéng","процесс","⏳"],["任务","rènwu","задание, задача","📋"],["重点","zhòngdiǎn","главное; ключевой пункт","⭐"]
+  ],
+  en: [
+    ["analyse","/ˈænəlaɪz/","анализировать","🔬"],["infer","/ɪnˈfɜː/","делать вывод","💭"],["distinguish","/dɪˈstɪŋɡwɪʃ/","различать","↔️"],["perspective","/pəˈspektɪv/","точка зрения","👁️"],["coherent","/kəʊˈhɪərənt/","связный, последовательный","🧩"],["justify","/ˈdʒʌstɪfaɪ/","обосновывать","⚖️"],["highlight","/ˈhaɪlaɪt/","выделять, подчёркивать","🖍️"],["assess","/əˈses/","оценивать","📊"],["derive","/dɪˈraɪv/","получать, выводить","➡️"],["allocate","/ˈæləkeɪt/","распределять","🗂️"]
+  ]
+} as const;
+
+export const october26Resources = {
+  zh: [
+    ["SayMei: пробный HSK 2","Бесплатный тест нового формата: 60 вопросов, аудио, транскрипт, пиньинь и ключи.","https://www.saymei.app/resources/downloads/hsk-2-mock-test","Пробный тест"],
+    ["XieXie: картинки и аудио","Визуальная игра на сопоставление слов до HSK 2 с авторскими иллюстрациями и записью носителя.","https://xiexie.app/play/find-friends","Игра"],
+    ["TingliLab","Тренажёр тонов, аудиодиктант и распознавание слов HSK 1–3 с проверкой произношения.","https://tinglilab.org/","Аудирование"],
+    ["Pinyinize HSK 2","Бесплатные истории уровня HSK 2 с пиньинем, естественной озвучкой и значениями слов.","https://pinyinize.com/en/reader/hsk-2","Чтение + аудио"],
+    ["Chenxi Mandarin","Бесплатные иллюстрированные сцены HSK 2 для визуального чтения и повторения слов.","https://chenximandarin.com/","Истории с картинками"]
+  ],
+  en: [
+    ["Cambridge B1 Video Quizzes","Короткие видео, диалоги, истории и задания на понимание для уровня B1.","https://assets.cambridgeenglish.org/portal/learner/b1/videos.html","Видео + задания"],
+    ["Write & Improve","Бесплатный тренажёр письма Cambridge с автоматической обратной связью и повторной проверкой текста.","https://writeandimprove.com/","Письмо"],
+    ["LingoStories","Бесплатные интерактивные истории: выбирай развитие сюжета, слушай аудио и сверяй перевод.","https://lingostories.org/en/","Интерактивные книги"],
+    ["Anglozone B1","Уроки B1 об идиомах, письме и акцентах с аудио и интерактивными упражнениями.","https://www.anglozone.com/","Интерактив"],
+    ["Disney Official Clips","Официальные сцены, трейлеры и фрагменты известных фильмов Disney для практики живой речи.","https://www.youtube.com/disney","Кино"]
+  ]
+} as const;
+
+export const october26Tasks = {
+  zh: ["Сыграй три раунда XieXie и собери таблицу: картинка — иероглиф — пиньинь — перевод.","Прослушай 8 слов в TingliLab и разложи их по четырём тонам цветными карточками.","Пройди десять вопросов SayMei и нарисуй значок рядом с каждой ошибкой: звук, слово или картинка.","Прочитай сцену Chenxi и соедини реплики с персонажами, не открывая перевод.","Выбери пять кадров из истории Pinyinize и перескажи сюжет с 先、然后、后来、最后.","Запиши минутный ответ о своей цели в китайском, используя 目标、坚持、过程 и 结果."],
+  en: ["Watch a Cambridge B1 video and match six statements to the speakers.","Choose a Disney scene, pause at five moments and predict the next line before listening.","Read a LingoStories chapter and draw a decision tree showing both possible choices.","Write a 100-word scene review in Write & Improve, revise it once after the feedback.","Sort eight statements into fact, opinion and inference, then justify each choice.","Create a six-picture summary and retell the story from a different character's perspective."]
+} as const;
+
+export const catalogUpdated = "26 октября 2026";
 
 export const extraWords = {
-  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh, ...october19Words.zh],
-  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en, ...october19Words.en]
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh, ...october19Words.zh, ...october26Words.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en, ...october19Words.en, ...october26Words.en]
 } as const;
 
 export const resourceCatalog = {
-  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh, ...october19Resources.zh],
-  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en, ...october19Resources.en]
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh, ...october19Resources.zh, ...october26Resources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en, ...october19Resources.en, ...october26Resources.en]
 } as const;
 
 export const rotatingTasks = {
-  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh, ...october19Tasks.zh],
-  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en, ...october19Tasks.en]
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh, ...october19Tasks.zh, ...october26Tasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en, ...october19Tasks.en, ...october26Tasks.en]
 } as const;
