@@ -66,6 +66,13 @@ export const dailyCards = {
     ,["努力", "nǔlì", "стараться; усердный", "她每天努力练习发音。", "💪"]
     ,["通过", "tōngguò", "через; посредством", "我通过故事学习新词。", "➡️"]
     ,["记住", "jìzhù", "запомнить", "用图片可以更快记住汉字。", "🧠"]
+    ,["观察", "guānchá", "наблюдать", "先观察图片，再回答问题。", "👀"]
+    ,["描述", "miáoshù", "описывать", "请描述一下电影里的房间。", "🖼️"]
+    ,["画面", "huàmiàn", "изображение, кадр", "这个画面让我想起北京。", "🎞️"]
+    ,["场景", "chǎngjǐng", "сцена, обстановка", "这个场景发生在学校。", "🎬"]
+    ,["角色", "juésè", "персонаж, роль", "你最喜欢哪个角色？", "🎭"]
+    ,["语气", "yǔqì", "тон речи", "听她的语气，她好像很高兴。", "🎧"]
+    ,["细节", "xìjié", "деталь", "请找出故事里的三个细节。", "🔍"]
   ],
   en: [
     ["worthwhile", "/ˌwɜːθˈwaɪl/", "стоящий усилий", "Learning a language is worthwhile.", "🌱"],
@@ -132,6 +139,13 @@ export const dailyCards = {
     ,["convey", "/kənˈveɪ/", "передавать мысль или чувство", "Her voice conveys disappointment.", "🎭"]
     ,["assumption", "/əˈsʌmpʃən/", "предположение", "My first assumption about the character was wrong.", "💭"]
     ,["consistent", "/kənˈsɪstənt/", "последовательный; постоянный", "Consistent practice improves listening skills.", "🔁"]
+    ,["narrative", "/ˈnærətɪv/", "повествование", "The film has a clear narrative.", "📖"]
+    ,["gesture", "/ˈdʒestʃə/", "жест", "Her gesture showed that she disagreed.", "🤌"]
+    ,["expression", "/ɪkˈspreʃən/", "выражение лица; выражение", "His expression changed during the scene.", "🙂"]
+    ,["setting", "/ˈsetɪŋ/", "место и время действия", "The story has a modern city setting.", "🏙️"]
+    ,["dialogue", "/ˈdaɪəlɒɡ/", "диалог", "Listen to the dialogue and identify the speakers.", "💬"]
+    ,["subtitle", "/ˈsʌbtaɪtəl/", "субтитр", "Watch once without subtitles.", "📺"]
+    ,["soundtrack", "/ˈsaʊndtræk/", "звуковая дорожка", "The soundtrack creates a tense mood.", "🎵"]
   ]
 } as const;
 
@@ -414,19 +428,50 @@ export const november9Tasks = {
   en: ["Read a British Council story and match six illustrations to events in the text.","Watch a Bright Lives video without the transcript and arrange five captions in order.","Choose a Movieclips scene and match each line to a character, emotion and intention.","Read and listen to a Net Languages story, then create a six-frame comic summary.","Complete one FluencyRoad lesson and turn five corrected answers into personal examples.","Compare two film stills for one minute, then summarise what may have happened between them."]
 } as const;
 
-export const catalogUpdated = "9 ноября 2026";
+export const november23Words = {
+  zh: [
+    ["观察","guānchá","наблюдать","👀"],["描述","miáoshù","описывать","🖼️"],["画面","huàmiàn","изображение, кадр","🎞️"],["场景","chǎngjǐng","сцена, обстановка","🎬"],["角色","juésè","персонаж, роль","🎭"],["语气","yǔqì","тон речи","🎧"],["细节","xìjié","деталь","🔍"],["录音","lùyīn","аудиозапись; записывать","🎙️"],["字幕","zìmù","субтитры","📺"],["顺序","shùnxù","порядок, последовательность","🔢"]
+  ],
+  en: [
+    ["narrative","/ˈnærətɪv/","повествование","📖"],["gesture","/ˈdʒestʃə/","жест","🤌"],["expression","/ɪkˈspreʃən/","выражение лица; выражение","🙂"],["setting","/ˈsetɪŋ/","место и время действия","🏙️"],["dialogue","/ˈdaɪəlɒɡ/","диалог","💬"],["subtitle","/ˈsʌbtaɪtəl/","субтитр","📺"],["soundtrack","/ˈsaʊndtræk/","звуковая дорожка","🎵"],["motive","/ˈməʊtɪv/","мотив, причина поступка","🧭"],["reveal","/rɪˈviːl/","раскрывать, показывать","✨"],["transition","/trænˈzɪʃən/","переход","➡️"]
+  ]
+} as const;
+
+export const november23Resources = {
+  zh: [
+    ["Chinese for HSK Level 2","Полный бесплатный курс: 24 лекции, 44 коротких видео, упражнения, таблицы письма и пробный экзамен.","https://www.chinaooc.com.cn/course/622ac98dbee70ef79f3eed26","Видеокурс + учебник"],
+    ["LingoHut Chinese","Бесплатные тематические уроки с озвучкой, карточками и играми на запоминание повседневной лексики.","https://www.lingohut.com/en/l61/learn-chinese","Аудио + игры"],
+    ["HSK Studio","Браузерный тренажёр: превращает любой китайский текст в практику чтения и выделяет лексику HSK 2.","https://hsk.fulinlabs.com/","Чтение + словарь"],
+    ["Real Life Chinese Tools","Бесплатная таблица пиньиня с аудио и словарь HSK 1–6 с примерами без регистрации.","https://reallifechinese.com/tools","Аудиословарь"],
+    ["ACA Chinese HSK 2","Первые два урока курса HSK 2 доступны бесплатно: связная речь, чтение и письменная практика.","https://www.aca-chinese.com/courses?level=hsk2","Уроки + письмо"]
+  ],
+  en: [
+    ["BBC Office English","Новые бесплатные выпуски 2026 года о работе: видео, аудио и полезные фразы в живых ситуациях.","https://www.bbclearningenglish.org/programme/office-english","Видео + аудио"],
+    ["Storyteller B1","Более 350 бесплатных историй уровня B1 с озвучкой и переводами для параллельного чтения.","https://storytellerenglish.com/en/","Книги + аудио"],
+    ["Randall's Life Stories","Живые аудиоистории с заданиями до прослушивания, вопросами и упражнениями после записи.","https://www.esl-lab.com/stories/","Аудирование"],
+    ["OpenLearn Languages","Бесплатные курсы Open University по английскому и коммуникации с видео, аудио и текстовыми заданиями.","https://www.open.edu/openlearn/languages/free-courses","Курсы"],
+    ["Sony Pictures Official","Официальные трейлеры и фрагменты известных фильмов, интервью и видео о съёмках.","https://www.youtube.com/@sonypictures","Кино" ]
+  ]
+} as const;
+
+export const november23Tasks = {
+  zh: ["Послушай урок LingoHut и соедини восемь слов с картинками, затем повтори каждое вслух.","Вставь короткий текст в HSK Studio и раскрась слова HSK 1 и HSK 2 двумя цветами.","Открой таблицу Real Life Chinese, прослушай шесть слогов и разложи их по четырём тонам.","Посмотри фрагмент курса Chinese for HSK Level 2 и расставь пять кадров по порядку.","Выбери сцену и создай карточки: 角色 — 场景 — 语气 — 细节.","Запиши минутный пересказ без текста, затем сравни его с исходной записью."],
+  en: ["Watch one BBC Office English episode and match six phrases to the speakers and intentions.","Read and listen to a Storyteller B1 story, then arrange six illustrated events in order.","Complete the pre-listening task for a Randall story, listen once and correct your predictions.","Choose a Sony Pictures clip and make a storyboard with six frames and one subtitle per frame.","Watch the same clip with and without subtitles; note five details you missed the first time.","Write a 120-word review describing the setting, dialogue, soundtrack and one character's motive."]
+} as const;
+
+export const catalogUpdated = "23 ноября 2026";
 
 export const extraWords = {
-  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh, ...october19Words.zh, ...october26Words.zh, ...november2Words.zh, ...november9Words.zh],
-  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en, ...october19Words.en, ...october26Words.en, ...november2Words.en, ...november9Words.en]
+  zh: [...baseExtraWords.zh, ...weeklyWords.zh, ...octoberWords.zh, ...october12Words.zh, ...october19Words.zh, ...october26Words.zh, ...november2Words.zh, ...november9Words.zh, ...november23Words.zh],
+  en: [...baseExtraWords.en, ...weeklyWords.en, ...octoberWords.en, ...october12Words.en, ...october19Words.en, ...october26Words.en, ...november2Words.en, ...november9Words.en, ...november23Words.en]
 } as const;
 
 export const resourceCatalog = {
-  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh, ...october19Resources.zh, ...october26Resources.zh, ...november2Resources.zh, ...november9Resources.zh],
-  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en, ...october19Resources.en, ...october26Resources.en, ...november2Resources.en, ...november9Resources.en]
+  zh: [...baseResourceCatalog.zh, ...weeklyResources.zh, ...octoberResources.zh, ...october12Resources.zh, ...october19Resources.zh, ...october26Resources.zh, ...november2Resources.zh, ...november9Resources.zh, ...november23Resources.zh],
+  en: [...baseResourceCatalog.en, ...weeklyResources.en, ...octoberResources.en, ...october12Resources.en, ...october19Resources.en, ...october26Resources.en, ...november2Resources.en, ...november9Resources.en, ...november23Resources.en]
 } as const;
 
 export const rotatingTasks = {
-  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh, ...october19Tasks.zh, ...october26Tasks.zh, ...november2Tasks.zh, ...november9Tasks.zh],
-  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en, ...october19Tasks.en, ...october26Tasks.en, ...november2Tasks.en, ...november9Tasks.en]
+  zh: [...baseRotatingTasks.zh, ...weeklyTasks.zh, ...octoberTasks.zh, ...october12Tasks.zh, ...october19Tasks.zh, ...october26Tasks.zh, ...november2Tasks.zh, ...november9Tasks.zh, ...november23Tasks.zh],
+  en: [...baseRotatingTasks.en, ...weeklyTasks.en, ...octoberTasks.en, ...october12Tasks.en, ...october19Tasks.en, ...october26Tasks.en, ...november2Tasks.en, ...november9Tasks.en, ...november23Tasks.en]
 } as const;
